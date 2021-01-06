@@ -2,157 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment| CSS Sticky Position</title>
+    <title>Assignment| Positions Example FIVE</title>
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="assert/font_awesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <style>
-        header{
-            width:100vw;
-            height: 60px;
-            border: 1px solid red;
-            position: fixed;
-            z-index: 5;
+
+        body>header{
+            height: 43px;
             background-color: #f6f2f2;
-        }
-        .logo{
-          height: 100px;
-            width: 160px;
-            margin-top: -15px;
-        }
-         ul{
-            margin: 0;
-            padding: 10px;
-            list-style: none;
-
-        }
-         .header-option li{
-             width: 75px;
-             top: -80px;
-             float: right;
-             position: relative;
-             font-weight: 600;
-         }
-        aside{
-            width: 184px;
-            height: 100vh;
-            background-color: #052678;
-            position: fixed;
-            margin-top: 62px;
-        }
-      .aside_option li{
-          height: 30px;
-          color: white;
-          font-weight: 600;
-          margin-left: 15px;
-          margin-top: 5px;
-      }
-      /*------------------------*/
-      article{
-         position: relative;
-          height: 200px;
-          top: 64px;
-          left: 186px;
-          width: calc((100% - 189px)*1);
-
-      }
-    article img{
-        height: 200px;
-        width:calc(((100% - 17px)*1)/3);
-        position: sticky;
-        border: 1px solid green;
-    }
-        article img:nth-child(1){
-            left: 0;
-        }
-        article img:nth-child(2){
-          left: 0;
-            right: 0;
-            margin: auto;
-        }
-        article img:nth-child(3){
-            right: 0;
-
-        }
-
-        main{
-            width: calc((100% - 17px)*1);
-            max-width: 100vw;
-            max-height: max-content;
+            box-shadow: 1px 2px 4px #534b4b;
             position: relative;
-
         }
-        p{
-            width: calc((100% - 17px)*1);
-            height: max-content;
-            font-size: 12px;
-        }
-        footer{
-            width: 100vw;
-            background-color: gray;
-            height: 40px;
-            position: fixed;
-            bottom: 0;
-            margin: auto;
-
-        }
-        footer h1{
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
+  header>img{
+         width: 97px;
+      margin-bottom: 10px;;
+  }
+        header>ul{
+          position: absolute;
+            right: 20px;
             top: 0;
-            width: max-content;
-            margin: auto;
-            color: white;
-            font-size: 30px;
+            list-style: none;
         }
+        header>ul>li{
+            margin-top: -13px;
+            display: inline-block;
+            font-family: 'Noto Serif', serif;
+            padding: 3px;
+            cursor: pointer;
+        }
+        header>ul>li>i{
+            padding: 3px;
+        }
+        header>ul>li>i:hover,header>ul>li:hover{
+            color: #075a10;
+        }
+        body>footer{
+            background-color: #534b4b;
+            height: 40px;
 
+        }
+        body>footer>h3{
+            color: #f6f2f2;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+        main{
+        position: relative;
+            margin: 0;
+        }
+        main>nav{
+            width: 200px;
+            background-color: #063d72;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        main>section{
+            margin-left: 200px;
 
+        }
+       body>main>section>p{
+         margin: 0;
+           padding: 3px;
+           font-size: 20px;
+
+        }
+        main>nav>ul>li{
+            color: #f6f2f2;
+            list-style: none;
+            padding: 6px;
+            cursor: pointer;
+        }
+        main>nav>ul>li>i{
+            color: #12eaea;
+            padding-right: 4px;
+        }
     </style>
 </head>
 <body>
 <header>
-    <img class="logo" src="assert/ijse.png">
-   <ul class="header-option">
-       <li>About Us</li>
-       <li>Contacts</li>
-       <li>Services</li>
-       <li>Home</li>
-   </ul>
-</header>
-<aside>
-    <ul class="aside_option">
-        <li>About Us</li>
-        <li>Contacts</li>
-        <li>Services</li>
-        <li>Home</li>
+   <img alt=" logo " src="assert/ijse.png">
+    <ul>
+        <li><i class="fas fa-home"></i>Home</li>
+        <li><i class="fas fa-users-cog"></i>Services</li>
+        <li><i class="far fa-address-card"></i>Contact</li>
+        <li><i class="fas fa-user-tie"></i>About Us</li>
     </ul>
-</aside>
-<article>
-<img src="assert/git.gif">
-<img src="assert/git.gif">
-<img src="assert/git.gif">
-    <main>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur assumenda eius hic impedit incidunt neque nisi placeat porro possimus provident quo, ratione rem, saepe sint tenetur voluptas voluptate.</p>
-    </main>
-</article>
+</header>
 <main>
-
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-users-cog"></i>Services</li>
+            <li><i class="far fa-address-card"></i>Contact</li>
+            <li><i class="fas fa-user-tie"></i>About Us</li>
+        </ul>
+    </nav>
+    <section>
+    <div></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa ducimus libero natus, quos repellendus veniam? Animi, beatae consequatur cupiditate dolor doloribus, in perferendis quisquam recusandae, reiciendis repellat sed ut!</p>
+    </section>
 </main>
 <footer>
-<h1>Develope By IJSE</h1>
+<h3>Developed By IJSE</h3>
 </footer>
 </body>
 </html>
